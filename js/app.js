@@ -30,9 +30,10 @@ fetch('https://65eb326743ce1641893373f6.mockapi.io/OtkanKunlar')
         data.forEach(element => {
             let newLi = document.createElement('li')
             newLi.innerHTML = `
-            <img src=${element.img} width="100"  alt="">
+            <img src=${element.img} width="150"  alt="">
+            <p>${element.title}</p>
              <p>${element.price}</p>
-            <button onclick="removeInf(${element.id})">${element.title}</button>`
+            <button class="delete" onclick="removeInf(${element.id})">delete</button>`
             elListcha.appendChild(newLi)
         });
     })
@@ -46,4 +47,3 @@ function removeInf(id) {
         .then((res) => res.json())
         .then((data) => console.log(data))
 }
-

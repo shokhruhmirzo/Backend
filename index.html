@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Alimov</title>
+
+    <style>
+        body{
+             background: url(./img/meduza.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    <form onsubmit="setBooks(event)" action="#">
-        <input name="title" type="text" placeholder="title">
-        <input name="img" type="text" placeholder="img">
-        <input name="price" type="text" placeholder="price">
-        <button type="submit">save</button>
-    </form>
-    <ul class="list">
-        
-    </ul>
+  <div class="container">
+    <div class="wrapper">
+        <h2 class="title">WeLCOME</h2>
+        <form class="form" onsubmit="setBooks(event)" action="#">
+            <input name="title" type="text" placeholder="title">
+            <input name="img" type="text" placeholder="img">
+            <input name="price" type="text" placeholder="price">
+            <br>
+            <button class="btn" type="submit">save</button>
+        </form>
+        <ul class="list">
+        </ul>
+       </div>
+  </div>
     
 
     
